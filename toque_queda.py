@@ -5,3 +5,5 @@ print("Hola mundo")
 print("buenas gente")
 print("hola")
 print("listo")
+import random
+print(random.randrange(9),random.randrange(9),random.randrange(9),random.randrange(9))
