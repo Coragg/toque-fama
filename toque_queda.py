@@ -1,9 +1,15 @@
 #Trabajo de toque y queda
 # Con Sofia Castro, Anibal Muñoz y Victor Camero
 #hola
-print("Hola mundo")
-print("buenas gente")
-print("hola")
-print("listo")
+
 import random
-print(random.randrange(9),random.randrange(9),random.randrange(9),random.randrange(9))
+
+dig1 = random.randrange(10)
+dig2 = random.randrange(10)
+dig3 = random.randrange(10)
+dig4 = random.randrange(10)
+
+if dig1 != dig2 and dig1 != dig3 and dig1 != dig4 and dig2 != dig3 and dig2 != dig4 and dig3 != dig4:
+    print(dig1, dig2, dig3, dig4)
+else:
+    print("Vuelva a correr el programa")
