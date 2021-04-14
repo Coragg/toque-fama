@@ -2,17 +2,14 @@
 # Con Sofia Castro, Anibal Muñoz y Victor Camero
 import random
 
-
-
-#El for es para la cantidad de turnos a jugar
-
+# Funcion de los numeros azar
 def numeros_azar():
-     dig1 = random.randrange(10)
-     dig2 = random.randrange(10)
-     dig3 = random.randrange(10)
-     dig4 = random.randrange(10)
-     if dig1 != dig2 and dig1 != dig3 and dig1 != dig4 and dig2 != dig3 and dig2 != dig4 and dig3 != dig4:
-         print(dig1, dig2, dig3, dig4)
+     primer_numero = random.randrange(10)
+     segundo_numero = random.randrange(10)
+     tercer_numero = random.randrange(10)
+     cuarto_numero = random.randrange(10)
+     if primer_numero != segundo_numero and primer_numero != tercer_numero and primer_numero != cuarto_numero and segundo_numero != tercer_numero and segundo_numero != cuarto_numero and tercer_numero != cuarto_numero:
+         print(primer_numero, segundo_numero, tercer_numero, cuarto_numero)
      else:
           print("Vuelva a correr el programa")
 
