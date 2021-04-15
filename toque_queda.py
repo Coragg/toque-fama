@@ -22,7 +22,7 @@ for partidas in range(turnos_a_jugar):
     if len(intento) == 4:
         print("")
     else:
-        print("ingreso mal los digitos")
+        print("el usuario pierde su jugada")
 
 
 
