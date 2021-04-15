@@ -21,6 +21,13 @@ turnos_a_jugar = int(input("Ingrese los turnos a jugar:"))
 for partidas in range(turnos_a_jugar):
     turno = partidas + 1
     intento = input(f"{turno} ingrese los numeros:")
+    if len(intento) == 4:
+        print("")
+    else:
+        print("ingreso mal los digitos")
+
+
+
 
 
 
