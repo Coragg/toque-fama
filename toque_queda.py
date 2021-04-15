@@ -15,8 +15,6 @@ def numeros_azar():
         cuarto_numero = random.randrange(10)
     return primer, segundo_numero, tercer_numero, cuarto_numero
 
-
-
 turnos_a_jugar = int(input("Ingrese los turnos a jugar:"))
 for partidas in range(turnos_a_jugar):
     turno = partidas + 1
