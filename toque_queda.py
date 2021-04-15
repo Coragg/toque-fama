@@ -2,18 +2,26 @@
 # Con Sofia Castro, Anibal Muñoz y Victor Camero
 import random
 
-# cuatro numeros aleatorios que no se repiten entre si
-def numeros_azar():
-    primer = random.randrange(10)
-    segundo_numero = random.randrange(10)
-    tercer_numero = random.randrange(10)
-    cuarto_numero = random.randrange(10)
-    while primer == segundo_numero or primer == tercer_numero or primer == cuarto_numero or segundo_numero == tercer_numero or segundo_numero == cuarto_numero or tercer_numero == cuarto_numero:
-        primer = random.randrange(10)
-        segundo_numero = random.randrange(10)
-        tercer_numero = random.randrange(10)
-        cuarto_numero = random.randrange(10)
-    return primer, segundo_numero, tercer_numero, cuarto_numero
+# Se cambia el valor de las variables, si estan repetidos
+def cambiar_numeros(a, b, c, d):
+    while a == b or a == c or a == d or b == c or b == d or c == d:
+        a = random.randrange(10)
+        b = random.randrange(10)
+        c = random.randrange(10)
+        d = random.randrange(10)
+    return a, b, c, d
+
+a = random.randrange(10)
+b = random.randrange(10)
+c = random.randrange(10)
+d = random.randrange(10)
+print(a, b, c, d)
+if a != b and a == c and a == d and b == c and b == d and c == d:
+    print(a, b, c, d)
+else:
+    print(cambiar_numeros(a, b, c, d))
+
+
 
 turnos_a_jugar = int(input("Ingrese los turnos a jugar:"))
 for partidas in range(turnos_a_jugar):
