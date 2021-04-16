@@ -1,7 +1,7 @@
 #Trabajo de toque y queda
 # Con Sofia Castro, Anibal Muñoz y Victor Camero
 import random
-
+"""
 # Se cambia el valor de las variables, si estan repetidos
 def cambiar_numeros(a, b, c, d):
     while a == b or a == c or a == d or b == c or b == d or c == d:
@@ -33,9 +33,28 @@ for partidas in range(turnos_a_jugar):
         print("el usuario pierde su jugada")
 
 
+"""
+contador = 1
+while True:
+
+    if contador == 1:
+        confirmar_jugar = input("S si desea jugar y N si no quiere jugar:")
+    else:
+        confirmar_jugar = input("Si quieres volver a jugar presione S y si quiere dejar de jugar presione N: ")
+    if confirmar_jugar.upper() == "S":
+        print("Vamos a jugar")
+        turnos_a_jugar = int(input("Ingrese los turnos a jugar:"))
+        for partidas in range(turnos_a_jugar):
+            turno = partidas + 1
+            intento = int(input(f"{turno}) ingrese los numeros: "))
+
+    elif confirmar_jugar.upper() == "N":
+        print("Espero que quieras volver a jugar.")
+        exit()
+    else:
+        print("Esta opcion no existe")
 
 
 
 
-
-
+    contador += 1
