@@ -35,7 +35,4 @@ while True:
     else:
         print("Esta opcion no esta permitida")
 
-
-
-
     contador += 1
