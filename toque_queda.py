@@ -28,6 +28,10 @@ while True:
         for partidas in range(turnos_a_jugar):
             turno = partidas + 1
             intento = int(input(f"{turno}) ingrese los numeros: "))
+            if len(intento) == 4:
+                print("Se acepta")
+            else:
+                print("No se acepta")
 
     elif confirmar_jugar.upper() == "N":
         print("Espero que quieras volver a jugar.")
