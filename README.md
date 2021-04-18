@@ -1,4 +1,4 @@
-<h1> Juego de Toque Queda</h1>
+<h1> Juego de Toque y Fama</h1>
 <p>Esta tarea esta hecho por los integrantes: </p>
 
 <li>Sofía Castro </li>
