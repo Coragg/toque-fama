@@ -1,14 +1,14 @@
 #Trabajo de toque y fama
 # Con Sofia Castro, Anibal Muñoz y Victor Camero
 import random
-print("-----------------------------------------------------------------------")
+print("------------------------------------------------------------------------------")
 print("Bienvenido al juego: toque y fama")
 print("El objetivo del juego: el juego generara de manera aleatoria 4 numeros\n"
       "del cero al nueve, tu deber es encontrarlos con las siguientes pistas\n"
       "si tienes 1 toque encontraste 1 numero pero no en el lugar indicado\n"
       "si encontraste 1 fama encontraste 1 numero y en el lugar indicado\n"
       "si logras 4 famas, felicidades ganaste")
-print("-----------------------------------------------------------------------")
+print("------------------------------------------------------------------------------")
 contador = 1
 ganadas= 0
 perdidas= 0
@@ -16,10 +16,12 @@ while True:
     if contador == 1:
         confirmar_jugar = input("S si desea jugar y N si no quiere jugar:")
     else:
+
         confirmar_jugar = input("Si quieres volver a jugar presione S y si quiere dejar de jugar presione N: ")
         perdidas=contador-ganadas-1
     if confirmar_jugar.upper() == "S":
         print("Vamos a jugar, suerte.")
+        print("------------------------------------------------------------------------------")
         primer_numero = random.randrange(10)
         segundo_numero = random.randrange(10)
         tercer_numero = random.randrange(10)
@@ -67,6 +69,7 @@ while True:
                     print("Famas=3")
                 elif(famas == 4):
                     print("Famas=4 !!FELICIDADES GANASTE¡¡, has acertado en",turno,"intentos")
+                    print("------------------------------------------------------------------------------")
                     ganadas+=1
                     break
                 if(toques==0):
@@ -85,8 +88,10 @@ while True:
                 print("El usuario pierde su jugada, por ingresar un dato invalido.")
                 break
     elif confirmar_jugar.upper() == "N":
+        print("------------------------------------------------------------------------------")
         print("Espero que quieras volver a jugar.")
         print("Partidas jugadas:", contador-1,"-", "Partidas Ganadas:",ganadas,"-", "Partidas perdidas:", perdidas)
+        print("------------------------------------------------------------------------------")
         exit()
     else:
         print("Esta opción no está permitida")
