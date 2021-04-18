@@ -1,9 +1,14 @@
 #Trabajo de toque y fama
 # Con Sofia Castro, Anibal Muñoz y Victor Camero
 import random
-print("------------------------------------------")
+print("-----------------------------------------------------------------------")
 print("Bienvenido al juego: toque y fama")
-print("------------------------------------------ \n")
+print("El objetivo del juego: el juego generara de manera aleatoria 4 numeros\n"
+      "tu deber es encontrarlos con las siguientes pistas\n"
+      "si tienes 1 toque encontraste 1 numero pero no en el lugar indicado\n"
+      "si encontraste 1 fama encontraste 1 numero y en el lugar indicado\n"
+      "si logras 4 famas, felicidades ganaste")
+print("-----------------------------------------------------------------------")
 contador = 1
 while True:
     if contador == 1:
@@ -11,7 +16,7 @@ while True:
     else:
         confirmar_jugar = input("Si quieres volver a jugar presione S y si quiere dejar de jugar presione N: ")
     if confirmar_jugar.upper() == "S":
-        print("Vamos a jugar")
+        print("Vamos a jugar, suerte.")
         primer_numero = random.randrange(10)
         segundo_numero = random.randrange(10)
         tercer_numero = random.randrange(10)
@@ -73,10 +78,11 @@ while True:
                 famas = 0
                 toques = 0
             else:
-                print("El usuario pierde su jugada, por ingressar un dato invalido.")
+                print("El usuario pierde su jugada, por ingresar un dato invalido.")
                 break
     elif confirmar_jugar.upper() == "N":
         print("Espero que quieras volver a jugar.")
+        print("Partidas jugadas:", contador-1,"-", "Partidas Ganadas:","-", "Partidas perdidas:")
         exit()
     else:
         print("Esta opción no está permitida")
