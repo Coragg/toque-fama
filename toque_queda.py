@@ -13,7 +13,7 @@ while True:
     if confirmar_jugar.upper() == "S":
         print("Vamos a jugar")
         primer_numero = random.randrange(10)
-        segundo_numero  = random.randrange(10)
+        segundo_numero = random.randrange(10)
         tercer_numero = random.randrange(10)
         cuarto_numero = random.randrange(10)
         if primer_numero != segundo_numero and primer_numero != tercer_numero and primer_numero != cuarto_numero and segundo_numero != tercer_numero and segundo_numero != cuarto_numero and tercer_numero != cuarto_numero:
@@ -79,6 +79,6 @@ while True:
         print("Espero que quieras volver a jugar.")
         exit()
     else:
-        print("Esta opcion no esta permitida")
+        print("Esta opción no está permitida")
 
     contador += 1
