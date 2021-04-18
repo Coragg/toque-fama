@@ -32,7 +32,7 @@ while True:
             turno = partidas + 1
             intento = input(f"{turno}) ingrese los numeros: ")
             if len(intento) == 4:
-                print("Se acepta")
+                print("Tus resultados del turno son:")
                 if(str(primer_numero)==intento[0]):
                     famas = famas + 1
                 elif(str(primer_numero) == intento[1] or str(primer_numero) == intento[2] or str(primer_numero) == intento[3]):
@@ -50,26 +50,26 @@ while True:
                 elif(str(cuarto_numero) == intento[0] or str(cuarto_numero) == intento[1] or str(cuarto_numero) == intento[2]):
                     toques = toques + 1
                 if(famas==0):
-                    print("Fama=0")
+                    print("Famas=0")
                 elif(famas == 1):
-                    print("Fama=1")
+                    print("Famas=1")
                 elif(famas == 2):
-                    print("Fama=2")
+                    print("Famas=2")
                 elif(famas == 3):
-                    print("Fama=3")
+                    print("Famas=3")
                 elif(famas == 4):
-                    print("Fama=4 !!FELICIDADES GANASTE¡¡")
+                    print("Famas=4 !!FELICIDADES GANASTE¡¡")
                     break
                 if(toques==0):
-                    print("Toque=0")
+                    print("Toques=0")
                 elif(toques == 1):
-                    print("Toque=1")
+                    print("Toques=1")
                 elif(toques == 2):
-                    print("Toque=2")
+                    print("Toques=2")
                 elif(toques == 3):
-                    print("Toque=3")
+                    print("Toques=3")
                 elif(toques == 4):
-                    print("Toque=4")
+                    print("Toques=4")
                 famas = 0
                 toques = 0
             else:
