@@ -1,4 +1,4 @@
-#Trabajo de toque y queda
+#Trabajo de toque y fama
 # Con Sofia Castro, Anibal Muñoz y Victor Camero
 import random
 print("------------------------------------------")
