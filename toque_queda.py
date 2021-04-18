@@ -30,6 +30,22 @@ while True:
             intento = input(f"{turno}) ingrese los numeros: ")
             if len(intento) == 4:
                 print("Se acepta")
+                if(str(a)==intento[0]):
+                    print("F")
+                elif(str(a)==intento[1] or str(a)==intento[2] or str(a)==intento[3]):
+                    print("T")
+                if(str(b)==intento[1]):
+                    print("F")
+                elif(str(b)==intento[0] or str(b)==intento[2] or str(b)==intento[3]):
+                    print("F")
+                if(str(c)==intento[2]):
+                    print("F")
+                elif(str(c)==intento[0] or str(c)==intento[1] or str(c)==intento[3]):
+                    print("T")
+                if(str(d)==intento[3]):
+                    print("F")
+                elif(str(d)==intento[0] or str(d)==intento[1] or str(d)==intento[2]):
+                    print("T")
             else:
                 print("No se acepta")
 
