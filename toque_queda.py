@@ -25,14 +25,14 @@ while True:
         tercer_numero = random.randrange(10)
         cuarto_numero = random.randrange(10)
         if primer_numero != segundo_numero and primer_numero != tercer_numero and primer_numero != cuarto_numero and segundo_numero != tercer_numero and segundo_numero != cuarto_numero and tercer_numero != cuarto_numero:
-            """print(primer_numero, segundo_numero, tercer_numero, cuarto_numero)"""
+            print(primer_numero, segundo_numero, tercer_numero, cuarto_numero)
         else:
             while primer_numero == segundo_numero or primer_numero == tercer_numero or primer_numero == cuarto_numero or segundo_numero == tercer_numero or segundo_numero == cuarto_numero or tercer_numero == cuarto_numero:
                 primer_numero = random.randrange(10)
                 segundo_numero = random.randrange(10)
                 tercer_numero = random.randrange(10)
                 cuarto_numero = random.randrange(10)
-            """print(primer_numero, segundo_numero, tercer_numero, cuarto_numero)"""
+            print(primer_numero, segundo_numero, tercer_numero, cuarto_numero)
         famas = 0
         toques = 0
         turnos_a_jugar = int(input("Ingrese los turnos a jugar:"))
@@ -66,7 +66,7 @@ while True:
                 elif(famas == 3):
                     print("Famas=3")
                 elif(famas == 4):
-                    print("Famas=4 !!FELICIDADES GANASTE¡¡")
+                    print("Famas=4 !!FELICIDADES GANASTE¡¡, has acertado en",turno,"intentos")
                     ganadas+=1
                     break
                 if(toques==0):
