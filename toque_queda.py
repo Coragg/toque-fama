@@ -22,7 +22,10 @@ for partidas in range(turnos_a_jugar):
     turno = partidas + 1
     intento = input(f"{turno} ingrese los numeros:")
 
-
+if intento==primer:
+    print("fama")
+else:
+    print("intenta")
 
 
 
