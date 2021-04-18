@@ -22,19 +22,19 @@ while True:
     if confirmar_jugar.upper() == "S":
         print("Vamos a jugar, suerte.")
         print("------------------------------------------------------------------------------")
-        primer_numero = random.randrange(10)
-        segundo_numero = random.randrange(10)
-        tercer_numero = random.randrange(10)
-        cuarto_numero = random.randrange(10)
-        if primer_numero != segundo_numero and primer_numero != tercer_numero and primer_numero != cuarto_numero and segundo_numero != tercer_numero and segundo_numero != cuarto_numero and tercer_numero != cuarto_numero:
-            print(primer_numero, segundo_numero, tercer_numero, cuarto_numero)
+        primer_numero_aleatorio = random.randrange(10)
+        segundo_numero_aleatorio = random.randrange(10)
+        tercer_numero_aleatorio = random.randrange(10)
+        cuarto_numero_aleatorio = random.randrange(10)
+        if primer_numero_aleatorio != segundo_numero_aleatorio and primer_numero_aleatorio != tercer_numero_aleatorio and primer_numero_aleatorio != cuarto_numero_aleatorio and segundo_numero_aleatorio != tercer_numero_aleatorio and segundo_numero_aleatorio != cuarto_numero_aleatorio and tercer_numero_aleatorio != cuarto_numero_aleatorio:
+            print(primer_numero_aleatorio, segundo_numero_aleatorio, tercer_numero_aleatorio, cuarto_numero_aleatorio)
         else:
-            while primer_numero == segundo_numero or primer_numero == tercer_numero or primer_numero == cuarto_numero or segundo_numero == tercer_numero or segundo_numero == cuarto_numero or tercer_numero == cuarto_numero:
-                primer_numero = random.randrange(10)
-                segundo_numero = random.randrange(10)
-                tercer_numero = random.randrange(10)
-                cuarto_numero = random.randrange(10)
-            print(primer_numero, segundo_numero, tercer_numero, cuarto_numero)
+            while primer_numero_aleatorio == segundo_numero_aleatorio or primer_numero_aleatorio == tercer_numero_aleatorio or primer_numero_aleatorio == cuarto_numero_aleatorio or segundo_numero_aleatorio == tercer_numero_aleatorio or segundo_numero_aleatorio == cuarto_numero_aleatorio or tercer_numero_aleatorio == cuarto_numero_aleatorio:
+                primer_numero_aleatorio = random.randrange(10)
+                segundo_numero_aleatorio = random.randrange(10)
+                tercer_numero_aleatorio = random.randrange(10)
+                cuarto_numero_aleatorio = random.randrange(10)
+            print(primer_numero_aleatorio, segundo_numero_aleatorio, tercer_numero_aleatorio, cuarto_numero_aleatorio)
         famas = 0
         toques = 0
         turnos_a_jugar = int(input("Ingrese los turnos a jugar:"))
@@ -43,21 +43,21 @@ while True:
             intento = input(f"{turno}) ingrese los numeros: ")
             if len(intento) == 4:
                 print("Tus resultados del turno son:")
-                if(str(primer_numero)==intento[0]):
+                if(str(primer_numero_aleatorio)==intento[0]):
                     famas = famas + 1
-                elif(str(primer_numero) == intento[1] or str(primer_numero) == intento[2] or str(primer_numero) == intento[3]):
+                elif(str(primer_numero_aleatorio) == intento[1] or str(primer_numero_aleatorio) == intento[2] or str(primer_numero_aleatorio) == intento[3]):
                     toques = toques + 1
-                if(str(segundo_numero)==intento[1]):
+                if(str(segundo_numero_aleatorio)==intento[1]):
                     famas = famas + 1
-                elif(str(segundo_numero) == intento[0] or str(segundo_numero) == intento[2] or str(segundo_numero) == intento[3]):
+                elif(str(segundo_numero_aleatorio) == intento[0] or str(segundo_numero_aleatorio) == intento[2] or str(segundo_numero_aleatorio) == intento[3]):
                     toques = toques + 1
-                if(str(tercer_numero)==intento[2]):
+                if(str(tercer_numero_aleatorio)==intento[2]):
                     famas = famas + 1
-                elif(str(tercer_numero) == intento[0] or str(tercer_numero) == intento[1] or str(tercer_numero) == intento[3]):
+                elif(str(tercer_numero_aleatorio) == intento[0] or str(tercer_numero_aleatorio) == intento[1] or str(tercer_numero_aleatorio) == intento[3]):
                     toques = toques + 1
-                if(str(cuarto_numero)==intento[3]):
+                if(str(cuarto_numero_aleatorio)==intento[3]):
                     famas = famas + 1
-                elif(str(cuarto_numero) == intento[0] or str(cuarto_numero) == intento[1] or str(cuarto_numero) == intento[2]):
+                elif(str(cuarto_numero_aleatorio) == intento[0] or str(cuarto_numero_aleatorio) == intento[1] or str(cuarto_numero_aleatorio) == intento[2]):
                     toques = toques + 1
                 if(famas==0):
                     print("Famas=0")
