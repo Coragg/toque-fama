@@ -10,66 +10,66 @@ while True:
         confirmar_jugar = input("Si quieres volver a jugar presione S y si quiere dejar de jugar presione N: ")
     if confirmar_jugar.upper() == "S":
         print("Vamos a jugar")
-        a = random.randrange(10)
-        b = random.randrange(10)
-        c = random.randrange(10)
-        d = random.randrange(10)
-        if a != b and a != c and a != d and b != c and b != d and c != d:
-            print(a, b, c, d)
+        primer_numero = random.randrange(10)
+        segundo_numero  = random.randrange(10)
+        tercer_numero = random.randrange(10)
+        cuarto_numero = random.randrange(10)
+        if primer_numero != segundo_numero and primer_numero != tercer_numero and primer_numero != cuarto_numero and segundo_numero != tercer_numero and segundo_numero != cuarto_numero and tercer_numero != cuarto_numero:
+            print(primer_numero, segundo_numero, tercer_numero, cuarto_numero)
         else:
-            while a == b or a == c or a == d or b == c or b == d or c == d:
-                a = random.randrange(10)
-                b = random.randrange(10)
-                c = random.randrange(10)
-                d = random.randrange(10)
-            print(a, b, c, d)
-        i=0
-        t=0
+            while primer_numero == segundo_numero or primer_numero == tercer_numero or primer_numero == cuarto_numero or segundo_numero == tercer_numero or segundo_numero == cuarto_numero or tercer_numero == cuarto_numero:
+                primer_numero = random.randrange(10)
+                segundo_numero = random.randrange(10)
+                tercer_numero = random.randrange(10)
+                cuarto_numero = random.randrange(10)
+            print(primer_numero, segundo_numero, tercer_numero, cuarto_numero)
+        famas = 0
+        toques = 0
         turnos_a_jugar = int(input("Ingrese los turnos a jugar:"))
         for partidas in range(turnos_a_jugar):
             turno = partidas + 1
             intento = input(f"{turno}) ingrese los numeros: ")
             if len(intento) == 4:
                 print("Se acepta")
-                if(str(a)==intento[0]):
-                    i=i+1
-                elif(str(a)==intento[1] or str(a)==intento[2] or str(a)==intento[3]):
-                    t=t+1
-                if(str(b)==intento[1]):
-                    i=i+1
-                elif(str(b)==intento[0] or str(b)==intento[2] or str(b)==intento[3]):
-                    t=t+1
-                if(str(c)==intento[2]):
-                    i=i+1
-                elif(str(c)==intento[0] or str(c)==intento[1] or str(c)==intento[3]):
-                    t=t+1
-                if(str(d)==intento[3]):
-                    i=i+1
-                elif(str(d)==intento[0] or str(d)==intento[1] or str(d)==intento[2]):
-                    t=t+1
-                if(i==0):
+                if(str(primer_numero)==intento[0]):
+                    famas = famas + 1
+                elif(str(primer_numero) == intento[1] or str(primer_numero) == intento[2] or str(primer_numero) == intento[3]):
+                    toques = toques + 1
+                if(str(segundo_numero)==intento[1]):
+                    famas = famas + 1
+                elif(str(segundo_numero) == intento[0] or str(segundo_numero) == intento[2] or str(segundo_numero) == intento[3]):
+                    toques = toques + 1
+                if(str(tercer_numero)==intento[2]):
+                    famas = famas + 1
+                elif(str(tercer_numero) == intento[0] or str(tercer_numero) == intento[1] or str(tercer_numero) == intento[3]):
+                    toques = toques + 1
+                if(str(cuarto_numero)==intento[3]):
+                    famas = famas + 1
+                elif(str(cuarto_numero) == intento[0] or str(cuarto_numero) == intento[1] or str(cuarto_numero) == intento[2]):
+                    toques = toques + 1
+                if(famas==0):
                     print("Fama=0")
-                elif(i==1):
+                elif(famas == 1):
                     print("Fama=1")
-                elif(i==2):
+                elif(famas == 2):
                     print("Fama=2")
-                elif(i==3):
+                elif(famas == 3):
                     print("Fama=3")
-                elif(i==4):
+                elif(famas == 4):
                     print("Fama=4 !!FELICIDADES GANASTE¡¡")
                     break
-                if(t==0):
+                if(toques==0):
                     print("Toque=0")
-                elif(t==1):
+                elif(toques == 1):
                     print("Toque=1")
-                elif(t==2):
+                elif(toques == 2):
                     print("Toque=2")
-                elif(t==3):
+                elif(toques == 3):
                     print("Toque=3")
-                elif(t==4):
+                elif(toques == 4):
                     print("Toque=4")
-                i=0
-                t=0
+                famas = 0
+                toques = 0
             else:
                 print("No se acepta")
                 break
