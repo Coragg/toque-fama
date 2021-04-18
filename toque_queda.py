@@ -1,7 +1,9 @@
 #Trabajo de toque y queda
 # Con Sofia Castro, Anibal Muñoz y Victor Camero
 import random
-
+print("------------------------------------------")
+print("Bienvenido al juego: toque y fama")
+print("------------------------------------------ \n")
 contador = 1
 while True:
     if contador == 1:
@@ -71,7 +73,7 @@ while True:
                 famas = 0
                 toques = 0
             else:
-                print("No se acepta")
+                print("El usuario pierde su jugada, por ingressar un dato invalido.")
                 break
     elif confirmar_jugar.upper() == "N":
         print("Espero que quieras volver a jugar.")
