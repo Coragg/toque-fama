@@ -43,21 +43,21 @@ while True:
             intento = input(f"{turno}) ingrese los numeros: ")
             if len(intento) == 4:
                 print("Tus resultados del turno son:")
-                if(str(primer_numero_aleatorio)==intento[0]):
+                if(primer_numero_aleatorio == int(intento[0])):
                     famas = famas + 1
-                elif(str(primer_numero_aleatorio) == intento[1] or str(primer_numero_aleatorio) == intento[2] or str(primer_numero_aleatorio) == intento[3]):
+                elif(primer_numero_aleatorio == int(intento[1]) or primer_numero_aleatorio == int(intento[2]) or primer_numero_aleatorio == int(intento[3])):
                     toques = toques + 1
-                if(str(segundo_numero_aleatorio)==intento[1]):
+                if(segundo_numero_aleatorio == int(intento[1])):
                     famas = famas + 1
-                elif(str(segundo_numero_aleatorio) == intento[0] or str(segundo_numero_aleatorio) == intento[2] or str(segundo_numero_aleatorio) == intento[3]):
+                elif(segundo_numero_aleatorio == int(intento[0]) or segundo_numero_aleatorio == int(intento[2]) or segundo_numero_aleatorio == int(intento[3])):
                     toques = toques + 1
-                if(str(tercer_numero_aleatorio)==intento[2]):
+                if(tercer_numero_aleatorio == int(intento[2])):
                     famas = famas + 1
-                elif(str(tercer_numero_aleatorio) == intento[0] or str(tercer_numero_aleatorio) == intento[1] or str(tercer_numero_aleatorio) == intento[3]):
+                elif(tercer_numero_aleatorio == int(intento[0]) or tercer_numero_aleatorio == int(intento[1]) or tercer_numero_aleatorio == int(intento[3])):
                     toques = toques + 1
-                if(str(cuarto_numero_aleatorio)==intento[3]):
+                if(cuarto_numero_aleatorio == int(intento[3])):
                     famas = famas + 1
-                elif(str(cuarto_numero_aleatorio) == intento[0] or str(cuarto_numero_aleatorio) == intento[1] or str(cuarto_numero_aleatorio) == intento[2]):
+                elif(cuarto_numero_aleatorio == int(intento[0]) or cuarto_numero_aleatorio == int(intento[1]) or cuarto_numero_aleatorio == int(intento[2])):
                     toques = toques + 1
                 if(famas==0):
                     print("Famas=0")
