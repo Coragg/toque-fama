@@ -45,7 +45,7 @@ while True:
                 print("Tus resultados del turno son:")
                 if(primer_numero_aleatorio == int(intento[0])):
                     famas = famas + 1
-                elif(primer_numero_aleatorio == int(intento[1]) or primer_numero_aleatorio == int(intento[2]) or primer_numero_aleatorio == int(intento[3])):
+                elif primer_numero_aleatorio == int(intento[1]) or primer_numero_aleatorio == int(intento[2]) or primer_numero_aleatorio == int(intento[3]):
                     toques = toques + 1
                 if(segundo_numero_aleatorio == int(intento[1])):
                     famas = famas + 1
