@@ -10,8 +10,9 @@ print("El objetivo del juego: el juego generara de manera aleatoria 4 numeros\n"
       "si logras 4 famas, felicidades ganaste")
 print("------------------------------------------------------------------------------")
 contador = 1
-ganadas= 0
-perdidas= 0
+ganadas = 0
+perdidas = 0
+
 while True:
     if contador == 1:
         confirmar_jugar = input("S si desea jugar y N si no quiere jugar:")
@@ -20,7 +21,7 @@ while True:
             print("Fin del juego, la secuencia era", primer_numero_aleatorio, segundo_numero_aleatorio,
                   tercer_numero_aleatorio, cuarto_numero_aleatorio)
         confirmar_jugar = input("Si quieres volver a jugar presione S y si quiere dejar de jugar presione N: ")
-        perdidas=contador-ganadas-1
+        perdidas = contador - ganadas - 1
     if confirmar_jugar.upper() == "S":
         print("Vamos a jugar, suerte.")
         print("------------------------------------------------------------------------------")
@@ -70,11 +71,11 @@ while True:
                 elif(famas == 3):
                     print("Famas=3")
                 elif(famas == 4):
-                    print("Famas=4 !!FELICIDADES GANASTE¡¡, has acertado en",turno,"intentos")
+                    print("Famas=4 !!FELICIDADES GANASTE¡¡, has acertado en", turno, "intentos")
                     print("------------------------------------------------------------------------------")
-                    ganadas+=1
+                    ganadas += 1
                     break
-                if(toques==0):
+                if(toques == 0):
                     print("Toques=0")
                 elif(toques == 1):
                     print("Toques=1")
@@ -92,7 +93,7 @@ while True:
     elif confirmar_jugar.upper() == "N":
         print("------------------------------------------------------------------------------")
         print("Espero que quieras volver a jugar.")
-        print("Partidas jugadas:", contador-1,"-", "Partidas Ganadas:",ganadas,"-", "Partidas perdidas:", perdidas)
+        print("Partidas jugadas:", contador - 1, "-", "Partidas Ganadas:", ganadas, "-", "Partidas perdidas:", perdidas)
         print("------------------------------------------------------------------------------")
         exit()
     else:
