@@ -91,6 +91,7 @@ while True:
                     toques = 0
                 else:
                     print("Se invalida este intento al tener números repetidos")
+                    break
             else:
                 print("El usuario pierde su jugada, por ingresar un dato invalido.")
                 break
