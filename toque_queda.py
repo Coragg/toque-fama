@@ -32,7 +32,7 @@ while True:
         confirmar_jugar = input("Si quieres volver a jugar presione S y si quiere dejar de jugar presione N: ")
         perdidas = contador - ganadas - 1
     if confirmar_jugar.upper() == "S":
-        cantidad_digitos = int(input("Ingrese la cantidad de digitos a jugar(de 4 a 8)"))
+        cantidad_digitos = int(input("Ingrese la cantidad de digitos a jugar(de 4 a 8):"))
         if cantidad_digitos == 4:
             print("Vamos a jugar, suerte.")
             print("------------------------------------------------------------------------------")
