@@ -491,7 +491,7 @@ while True:
                             toques = toques + 1
                         if (octavo_numero_aleatorio == int(intento[7])):
                             famas = famas + 1
-                        elif (octavo_numero_aleatorio == int(intento[0]) or octavo_numero_aleatorio == int(intento[1]) or octavo_numero_aleatorio == int(intento[2]) or octavo_numero_aleatorio == int(intento[3]) or octavo_numero_aleatorio == int(intento[4]) or octavo_numero_aleatorio == int(intento[5]) or octavo_numero_aleatorio == int(intento[6]):
+                        elif octavo_numero_aleatorio == int(intento[0]) or octavo_numero_aleatorio == int(intento[1]) or octavo_numero_aleatorio == int(intento[2]) or octavo_numero_aleatorio == int(intento[3]) or octavo_numero_aleatorio == int(intento[4]) or octavo_numero_aleatorio == int(intento[5]) or octavo_numero_aleatorio == int(intento[6]):
                             toques = toques + 1
                         if (famas == 0):
                             print("Famas=0")
