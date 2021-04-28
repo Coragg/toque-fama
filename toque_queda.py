@@ -409,7 +409,7 @@ while True:
                         print("Se invalida este intento al tener números repetidos")
                         break
                 else:
-                    print("El usuario pierde su jugada, por ingresar un dato invalido.")
+                    print("El usuario pierde su jugada, por ingresar un dato invalido. ")
                     break
 
         elif cantidad_digitos == 8:
