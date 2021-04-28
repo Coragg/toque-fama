@@ -148,7 +148,7 @@ while True:
                             toques = toques + 1
                         if(quinto_numero_aleatorio == int(intento[4])):
                             famas = famas + 1
-                        elif(quinto_numero_aleatorio == int(intento[0]) or quinto_numero_aleatorio == int(intento[1]) or quinto_numero_aleatorio == int(intento[2]) or quinto_numero_aleatorio == int(intento[3]))
+                        elif(quinto_numero_aleatorio == int(intento[0]) or quinto_numero_aleatorio == int(intento[1]) or quinto_numero_aleatorio == int(intento[2]) or quinto_numero_aleatorio == int(intento[3])):
                             toques = toques + 1
                         if(famas==0):
                             print("Famas=0")
@@ -159,7 +159,7 @@ while True:
                         elif(famas == 3):
                             print("Famas=3")
                         elif(famas == 4):
-                            print("Famas=4)
+                            print("Famas=4")
                         elif(famas == 5):
                             print("Famas=5  ¡¡FELICIDADES GANASTE!!, Has acertado en el intento", turno)
                             print("------------------------------------------------------------------------------")
