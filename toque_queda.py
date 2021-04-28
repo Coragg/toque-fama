@@ -126,7 +126,7 @@ while True:
             for partidas in range(turnos_a_jugar):
                 turno = partidas + 1
                 intento = input(f"{turno}) ingrese los numeros: ")
-                if len(intento) == 4:
+                if len(intento) == 5:
                     print("Tus resultados del turno son:")
 
                     if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) and int(intento[0]) != int(intento[3]) and int(intento[1]) != int(intento[2]) and int(intento[1]) != int(intento[3]) and int(intento[2]) != int(intento[3]):
@@ -213,7 +213,7 @@ while True:
             for partidas in range(turnos_a_jugar):
                 turno = partidas + 1
                 intento = input(f"{turno}) ingrese los numeros: ")
-                if len(intento) == 4:
+                if len(intento) == 6:
                     print("Tus resultados del turno son:")
 
                     if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) and int(
