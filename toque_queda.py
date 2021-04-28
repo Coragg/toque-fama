@@ -295,7 +295,8 @@ while True:
 
         elif cantidad_digitos == 7:
             print()
-
+        elif cantidad_digitos == 8:
+            print()
     elif confirmar_jugar.upper() == "N":
         print("------------------------------------------------------------------------------")
         print("Espero que quieras volver a jugar.")
