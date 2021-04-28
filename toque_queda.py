@@ -176,7 +176,10 @@ while True:
                     print("El usuario pierde su jugada, por ingresar un dato invalido.")
                     break
 
-
+        elif cantidad_digitos == 6:
+            print()
+        elif cantidad_digitos == 7:
+            print()
 
     elif confirmar_jugar.upper() == "N":
         print("------------------------------------------------------------------------------")
