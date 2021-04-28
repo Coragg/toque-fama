@@ -78,7 +78,7 @@ while True:
                     elif(famas == 3):
                         print("Famas=3")
                     elif(famas == 4):
-                        print("Famas=4 !!FELICIDADES GANASTE¡¡, has acertado en", turno, "intentos")
+                        print("Famas=4 !!FELICIDADES GANASTE¡¡, Has acertado en el intento", turno)
                         print("------------------------------------------------------------------------------")
                         ganadas += 1
                         break
@@ -103,7 +103,7 @@ while True:
     elif confirmar_jugar.upper() == "N":
         print("------------------------------------------------------------------------------")
         print("Espero que quieras volver a jugar.")
-        print("Partidas jugadas:", contador - 1, "-", "Partidas Ganadas:", ganadas, "-", "Partidas perdidas:", perdidas)
+        print("Partidas Jugadas:", contador - 1, "-", "Partidas Ganadas:", ganadas, "-", "Partidas Perdidas:", perdidas, "-", "Record de Intentos:")
         print("------------------------------------------------------------------------------")
         exit()
     else:
