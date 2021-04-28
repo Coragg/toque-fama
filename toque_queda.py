@@ -78,7 +78,7 @@ while True:
                     elif(famas == 3):
                         print("Famas=3")
                     elif(famas == 4):
-                        print("Famas=4 !!FELICIDADES GANASTE¡¡, Has acertado en el intento", turno)
+                        print("Famas=4 ¡¡FELICIDADES GANASTE!!, Has acertado en el intento", turno)
                         print("------------------------------------------------------------------------------")
                         ganadas += 1
                         break
