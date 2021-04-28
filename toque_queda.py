@@ -7,7 +7,7 @@ print("El objetivo del juego: el juego generara de manera aleatoria 4 numeros\n"
       "del cero al nueve, tu deber es encontrarlos con las siguientes pistas\n"
       "si tienes 1 toque encontraste 1 numero pero no en el lugar indicado\n"
       "si encontraste 1 fama encontraste 1 numero y en el lugar indicado\n"
-      "si logras 4 famas, felicidades ganaste")
+      "si logras todas las famas, felicidades ganaste")
 print("------------------------------------------------------------------------------")
 contador = 1
 ganadas = 0
