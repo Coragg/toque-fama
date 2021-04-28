@@ -193,7 +193,14 @@ while True:
             cuarto_numero_aleatorio = random.randrange(10)
             quinto_numero_aleatorio = random.randrange(10)
             sexto_numero_aleatorio = random.randrange(10)
-            while primer_numero_aleatorio == segundo_numero_aleatorio or primer_numero_aleatorio == tercer_numero_aleatorio or primer_numero_aleatorio == cuarto_numero_aleatorio or primer_numero_aleatorio == quinto_numero_aleatorio or segundo_numero_aleatorio == tercer_numero_aleatorio or segundo_numero_aleatorio == cuarto_numero_aleatorio or segundo_numero_aleatorio == quinto_numero_aleatorio or tercer_numero_aleatorio == cuarto_numero_aleatorio or tercer_numero_aleatorio == quinto_numero_aleatorio or cuarto_numero_aleatorio == quinto_numero_aleatorio:
+            while primer_numero_aleatorio == segundo_numero_aleatorio or primer_numero_aleatorio == tercer_numero_aleatorio \
+                    or primer_numero_aleatorio == cuarto_numero_aleatorio or primer_numero_aleatorio == quinto_numero_aleatorio \
+                    or primer_numero_aleatorio == sexto_numero_aleatorio or segundo_numero_aleatorio == tercer_numero_aleatorio \
+                    or segundo_numero_aleatorio == cuarto_numero_aleatorio or segundo_numero_aleatorio == quinto_numero_aleatorio \
+                    or segundo_numero_aleatorio == sexto_numero_aleatorio or tercer_numero_aleatorio == cuarto_numero_aleatorio \
+                    or tercer_numero_aleatorio == quinto_numero_aleatorio or tercer_numero_aleatorio == sexto_numero_aleatorio \
+                    or cuarto_numero_aleatorio == quinto_numero_aleatorio or cuarto_numero_aleatorio == sexto_numero_aleatorio \
+                    or quinto_numero_aleatorio == sexto_numero_aleatorio:
                 primer_numero_aleatorio = random.randrange(10)
                 segundo_numero_aleatorio = random.randrange(10)
                 tercer_numero_aleatorio = random.randrange(10)
