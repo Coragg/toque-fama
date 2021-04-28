@@ -206,6 +206,7 @@ while True:
                 tercer_numero_aleatorio = random.randrange(10)
                 cuarto_numero_aleatorio = random.randrange(10)
                 quinto_numero_aleatorio = random.randrange(10)
+                sexto_numero_aleatorio = random.randrange(10)
             famas = 0
             toques = 0
             turnos_a_jugar = int(input("Ingrese los turnos a jugar:"))
