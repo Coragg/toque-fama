@@ -11,7 +11,12 @@ print("El objetivo del juego: el juego generara de manera aleatoria 4 numeros\n"
 print("------------------------------------------------------------------------------")
 contador = 1
 ganadas = 0
+famas = 0
 perdidas = 0
+primer_numero_aleatorio = 0
+segundo_numero_aleatorio = 0
+tercer_numero_aleatorio = 0
+cuarto_numero_aleatorio = 0
 
 while True:
     if contador == 1:
