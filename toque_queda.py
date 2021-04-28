@@ -222,22 +222,36 @@ while True:
                         if (primer_numero_aleatorio == int(intento[0])):
                             famas = famas + 1
                         elif primer_numero_aleatorio == int(intento[1]) or primer_numero_aleatorio == int(
-                                intento[2]) or primer_numero_aleatorio == int(intento[3]):
+                                intento[2]) or primer_numero_aleatorio == int(
+                                intento[3]) or primer_numero_aleatorio == int(intento[4]) or primer_numero_aleatorio == int(intento[5]):
                             toques = toques + 1
                         if (segundo_numero_aleatorio == int(intento[1])):
                             famas = famas + 1
                         elif (segundo_numero_aleatorio == int(intento[0]) or segundo_numero_aleatorio == int(
-                                intento[2]) or segundo_numero_aleatorio == int(intento[3])):
+                                intento[2]) or segundo_numero_aleatorio == int(
+                                intento[3]) or segundo_numero_aleatorio == int(intento[4]) or segundo_numero_aleatorio == int(intento[5])):
                             toques = toques + 1
                         if (tercer_numero_aleatorio == int(intento[2])):
                             famas = famas + 1
                         elif (tercer_numero_aleatorio == int(intento[0]) or tercer_numero_aleatorio == int(
-                                intento[1]) or tercer_numero_aleatorio == int(intento[3])):
+                                intento[1]) or tercer_numero_aleatorio == int(
+                                intento[3]) or tercer_numero_aleatorio == int(intento[4]) or tercer_numero_aleatorio == int(intento[5])):
                             toques = toques + 1
                         if (cuarto_numero_aleatorio == int(intento[3])):
                             famas = famas + 1
                         elif (cuarto_numero_aleatorio == int(intento[0]) or cuarto_numero_aleatorio == int(
-                                intento[1]) or cuarto_numero_aleatorio == int(intento[2])):
+                                intento[1]) or cuarto_numero_aleatorio == int(
+                                intento[2]) or cuarto_numero_aleatorio == int(intento[4]) or cuarto_numero_aleatorio == int(intento[5])):
+                            toques = toques + 1
+                        if (quinto_numero_aleatorio == int(intento[4])):
+                            famas = famas + 1
+                        elif (quinto_numero_aleatorio == int(intento[0]) or quinto_numero_aleatorio == int(
+                                intento[1]) or quinto_numero_aleatorio == int(
+                                intento[2]) or quinto_numero_aleatorio == int(intento[3]) or quinto_numero_aleatorio == int(intento[5])):
+                            toques = toques + 1
+                        if (sexto_numero_aleatorio == int(intento[5])):
+                            famas = famas + 1
+                        elif (sexto_numero_aleatorio == int(intento[0]) or sexto_numero_aleatorio == int(intento[1]) or sexto_numero_aleatorio == int(intento[2]) or sexto_numero_aleatorio == int(intento[3]) or sexto_numero_aleatorio == int(intento[4])):
                             toques = toques + 1
                         if (famas == 0):
                             print("Famas=0")
@@ -248,7 +262,11 @@ while True:
                         elif (famas == 3):
                             print("Famas=3")
                         elif (famas == 4):
-                            print("Famas=4 ¡¡FELICIDADES GANASTE!!, Has acertado en el intento", turno)
+                            print("Famas=4")
+                        elif (famas == 5):
+                            print("Famas=5")
+                        elif (famas == 6):
+                            print("Famas=6 ¡¡FELICIDADES GANASTE!!, Has acertado en el intento", turno)
                             print("------------------------------------------------------------------------------")
                             ganadas += 1
                             break
@@ -262,6 +280,10 @@ while True:
                             print("Toques=3")
                         elif (toques == 4):
                             print("Toques=4")
+                        elif (toques == 5):
+                            print("Toques=5")
+                        elif (toques == 6):
+                            print("Toques=6")
                         famas = 0
                         toques = 0
                     else:
