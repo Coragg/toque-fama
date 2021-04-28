@@ -455,43 +455,43 @@ while True:
                             famas = famas + 1
                         elif primer_numero_aleatorio == int(intento[1]) or primer_numero_aleatorio == int(
                                 intento[2]) or primer_numero_aleatorio == int(
-                            intento[3]) or primer_numero_aleatorio == int(intento[4]) or primer_numero_aleatorio == int(
-                            intento[5]):
+                                intento[3]) or primer_numero_aleatorio == int(intento[4]) or primer_numero_aleatorio == int(intento[5]) or primer_numero_aleatorio == int(intento[6]) or primer_numero_aleatorio == int(intento[7]):
                             toques = toques + 1
                         if (segundo_numero_aleatorio == int(intento[1])):
                             famas = famas + 1
                         elif (segundo_numero_aleatorio == int(intento[0]) or segundo_numero_aleatorio == int(
                                 intento[2]) or segundo_numero_aleatorio == int(
-                            intento[3]) or segundo_numero_aleatorio == int(
-                            intento[4]) or segundo_numero_aleatorio == int(intento[5])):
+                                intento[3]) or segundo_numero_aleatorio == int(intento[4]) or segundo_numero_aleatorio == int(intento[5]) or segundo_numero_aleatorio == int(intento[6]) or segundo_numero_aleatorio == int(intento[7])):
                             toques = toques + 1
                         if (tercer_numero_aleatorio == int(intento[2])):
                             famas = famas + 1
                         elif (tercer_numero_aleatorio == int(intento[0]) or tercer_numero_aleatorio == int(
                                 intento[1]) or tercer_numero_aleatorio == int(
-                            intento[3]) or tercer_numero_aleatorio == int(intento[4]) or tercer_numero_aleatorio == int(
-                            intento[5])):
+                                intento[3]) or tercer_numero_aleatorio == int(intento[4]) or tercer_numero_aleatorio == int(intento[5]) or tercer_numero_aleatorio == int(intento[6]) or tercer_numero_aleatorio == int(intento[7])):
                             toques = toques + 1
                         if (cuarto_numero_aleatorio == int(intento[3])):
                             famas = famas + 1
                         elif (cuarto_numero_aleatorio == int(intento[0]) or cuarto_numero_aleatorio == int(
                                 intento[1]) or cuarto_numero_aleatorio == int(
-                            intento[2]) or cuarto_numero_aleatorio == int(intento[4]) or cuarto_numero_aleatorio == int(
-                            intento[5])):
+                                intento[2]) or cuarto_numero_aleatorio == int(intento[4]) or cuarto_numero_aleatorio == int(intento[5]) or cuarto_numero_aleatorio == int(intento[6]) or cuarto_numero_aleatorio == int(intento[7])):
                             toques = toques + 1
                         if (quinto_numero_aleatorio == int(intento[4])):
                             famas = famas + 1
                         elif (quinto_numero_aleatorio == int(intento[0]) or quinto_numero_aleatorio == int(
                                 intento[1]) or quinto_numero_aleatorio == int(
-                            intento[2]) or quinto_numero_aleatorio == int(intento[3]) or quinto_numero_aleatorio == int(
-                            intento[5])):
+                                intento[2]) or quinto_numero_aleatorio == int(intento[3]) or quinto_numero_aleatorio == int(intento[5]) or quinto_numero_aleatorio == int(intento[6]) or quinto_numero_aleatorio == int(intento[7])):
                             toques = toques + 1
                         if (sexto_numero_aleatorio == int(intento[5])):
                             famas = famas + 1
-                        elif (sexto_numero_aleatorio == int(intento[0]) or sexto_numero_aleatorio == int(
-                                intento[1]) or sexto_numero_aleatorio == int(
-                                intento[2]) or sexto_numero_aleatorio == int(
-                                intento[3]) or sexto_numero_aleatorio == int(intento[4])):
+                        elif (sexto_numero_aleatorio == int(intento[0]) or sexto_numero_aleatorio == int(intento[1]) or sexto_numero_aleatorio == int(intento[2]) or sexto_numero_aleatorio == int(intento[3]) or sexto_numero_aleatorio == int(intento[4]) or sexto_numero_aleatorio == int(intento[6]) or sexto_numero_aleatorio == int(intento[7])):
+                            toques = toques + 1
+                        if (septimo_numero_aleatorio == int(intento[6])):
+                            famas = famas + 1
+                        elif (septimo_numero_aleatorio == int(intento[0]) or septimo_numero_aleatorio == int(intento[1]) or septimo_numero_aleatorio == int(intento[2]) or septimo_numero_aleatorio == int(intento[3]) or septimo_numero_aleatorio == int(intento[4]) or septimo_numero_aleatorio == int(intento[5]) or septimo_numero_aleatorio == int(intento[7])):
+                            toques = toques + 1
+                        if (octavo_numero_aleatorio == int(intento[7])):
+                            famas = famas + 1
+                        elif (octavo_numero_aleatorio == int(intento[0]) or octavo_numero_aleatorio == int(intento[1]) or octavo_numero_aleatorio == int(intento[2]) or octavo_numero_aleatorio == int(intento[3]) or octavo_numero_aleatorio == int(intento[4]) or octavo_numero_aleatorio == int(intento[5]) or octavo_numero_aleatorio == int(intento[6]):
                             toques = toques + 1
                         if (famas == 0):
                             print("Famas=0")
@@ -506,7 +506,11 @@ while True:
                         elif (famas == 5):
                             print("Famas=5")
                         elif (famas == 6):
-                            print("Famas=6 ¡¡FELICIDADES GANASTE!!, Has acertado en el intento", turno)
+                            print("Famas=6")
+                        elif (famas == 7):
+                            print("Famas=7")
+                        elif (famas == 8):
+                            print("Famas=8 ¡¡FELICIDADES GANASTE!!, Has acertado en el intento", turno)
                             print("------------------------------------------------------------------------------")
                             ganadas += 1
                             break
@@ -524,6 +528,10 @@ while True:
                             print("Toques=5")
                         elif (toques == 6):
                             print("Toques=6")
+                        elif (toques == 7):
+                            print("Toques=7")
+                        elif (toques == 8):
+                            print("Toques=8")
                         famas = 0
                         toques = 0
                     else:
