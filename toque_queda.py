@@ -139,6 +139,7 @@ while True:
                 tercer_numero_aleatorio = random.randrange(10)
                 cuarto_numero_aleatorio = random.randrange(10)
                 quinto_numero_aleatorio = random.randrange(10)
+            print(primer_numero_aleatorio,segundo_numero_aleatorio,tercer_numero_aleatorio,cuarto_numero_aleatorio,quinto_numero_aleatorio)
             famas = 0
             toques = 0
             turnos_a_jugar = int(input("Ingrese los turnos a jugar:"))
@@ -228,6 +229,7 @@ while True:
                 cuarto_numero_aleatorio = random.randrange(10)
                 quinto_numero_aleatorio = random.randrange(10)
                 sexto_numero_aleatorio = random.randrange(10)
+            print(primer_numero_aleatorio,segundo_numero_aleatorio,tercer_numero_aleatorio,cuarto_numero_aleatorio,quinto_numero_aleatorio,sexto_numero_aleatorio)
             famas = 0
             toques = 0
             turnos_a_jugar = int(input("Ingrese los turnos a jugar:"))
@@ -339,6 +341,7 @@ while True:
                 quinto_numero_aleatorio = random.randrange(10)
                 sexto_numero_aleatorio = random.randrange(10)
                 septimo_numero_aleatorio = random.randrange(10)
+            print(primer_numero_aleatorio, segundo_numero_aleatorio, tercer_numero_aleatorio, cuarto_numero_aleatorio, quinto_numero_aleatorio, sexto_numero_aleatorio, septimo_numero_aleatorio)
             famas = 0
             toques = 0
             turnos_a_jugar = int(input("Ingrese los turnos a jugar:"))
@@ -460,6 +463,7 @@ while True:
                 sexto_numero_aleatorio = random.randrange(10)
                 septimo_numero_aleatorio = random.randrange(10)
                 octavo_numero_aleatorio = random.randrange(10)
+            print(primer_numero_aleatorio, segundo_numero_aleatorio, tercer_numero_aleatorio,cuarto_numero_aleatorio, quinto_numero_aleatorio, sexto_numero_aleatorio,septimo_numero_aleatorio)
             famas = 0
             toques = 0
             turnos_a_jugar = int(input("Ingrese los turnos a jugar:"))
