@@ -124,6 +124,7 @@ while True:
                 else:
                     print("El usuario pierde su jugada, por ingresar un dato invalido.")
                     break
+
         elif cantidad_digitos == 5:
             print("Vamos a jugar, suerte.")
             print("------------------------------------------------------------------------------")
@@ -205,6 +206,8 @@ while True:
                     break
 
         elif cantidad_digitos == 6:
+            print("Vamos a jugar, suerte.")
+            print("------------------------------------------------------------------------------")
             primer_numero_aleatorio = random.randrange(10)
             segundo_numero_aleatorio = random.randrange(10)
             tercer_numero_aleatorio = random.randrange(10)
