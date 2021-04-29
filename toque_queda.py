@@ -42,15 +42,13 @@ while True:
             segundo_numero_aleatorio = random.randrange(10)
             tercer_numero_aleatorio = random.randrange(10)
             cuarto_numero_aleatorio = random.randrange(10)
-            if primer_numero_aleatorio != segundo_numero_aleatorio and primer_numero_aleatorio != tercer_numero_aleatorio and primer_numero_aleatorio != cuarto_numero_aleatorio and segundo_numero_aleatorio != tercer_numero_aleatorio and segundo_numero_aleatorio != cuarto_numero_aleatorio and tercer_numero_aleatorio != cuarto_numero_aleatorio:
-                """print(primer_numero_aleatorio, segundo_numero_aleatorio, tercer_numero_aleatorio, cuarto_numero_aleatorio)"""
-            else:
-                while primer_numero_aleatorio == segundo_numero_aleatorio or primer_numero_aleatorio == tercer_numero_aleatorio or primer_numero_aleatorio == cuarto_numero_aleatorio or segundo_numero_aleatorio == tercer_numero_aleatorio or segundo_numero_aleatorio == cuarto_numero_aleatorio or tercer_numero_aleatorio == cuarto_numero_aleatorio:
-                    primer_numero_aleatorio = random.randrange(10)
-                    segundo_numero_aleatorio = random.randrange(10)
-                    tercer_numero_aleatorio = random.randrange(10)
-                    cuarto_numero_aleatorio = random.randrange(10)
-                """print(primer_numero_aleatorio, segundo_numero_aleatorio, tercer_numero_aleatorio, cuarto_numero_aleatorio)"""
+
+            while primer_numero_aleatorio == segundo_numero_aleatorio or primer_numero_aleatorio == tercer_numero_aleatorio or primer_numero_aleatorio == cuarto_numero_aleatorio or segundo_numero_aleatorio == tercer_numero_aleatorio or segundo_numero_aleatorio == cuarto_numero_aleatorio or tercer_numero_aleatorio == cuarto_numero_aleatorio:
+                primer_numero_aleatorio = random.randrange(10)
+                segundo_numero_aleatorio = random.randrange(10)
+                tercer_numero_aleatorio = random.randrange(10)
+                cuarto_numero_aleatorio = random.randrange(10)
+            """print(primer_numero_aleatorio, segundo_numero_aleatorio, tercer_numero_aleatorio, cuarto_numero_aleatorio)"""
             famas = 0
             toques = 0
             turnos_a_jugar = int(input("Ingrese los turnos a jugar:"))
