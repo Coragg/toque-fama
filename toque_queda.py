@@ -23,6 +23,7 @@ quinto_numero_aleatorio = 0
 sexto_numero_aleatorio = 0
 septimo_numero_aleatorio = 0
 octavo_numero_aleatorio = 0
+partidas_jugadas = 0
 
 while True:
     if contador == 1:
@@ -48,6 +49,7 @@ while True:
         confirmar_jugar = input("Si quieres volver a jugar presione S y si quiere dejar de jugar presione N: ")
         perdidas = contador - ganadas - 1
     if confirmar_jugar.upper() == "S":
+        partidas_jugadas += 1
         cantidad_digitos = int(input("Ingrese la cantidad de digitos a jugar(de 4 a 8):"))
         while cantidad_digitos < 4 or cantidad_digitos > 8:
             cantidad_digitos = int(input("Ingrese la cantidad de digitos a jugar(de 4 a 8):"))
@@ -602,7 +604,7 @@ while True:
     elif confirmar_jugar.upper() == "N":
         print("------------------------------------------------------------------------------")
         print("Espero que quieras volver a jugar.")
-        print("Partidas Jugadas:", contador - 1, "-", "Partidas Ganadas:", ganadas, "-", "Partidas Perdidas:", perdidas, "-", "Record de Intentos:", record_intentos)
+        print("Partidas Jugadas:", partidas_jugadas, "-", "Partidas Ganadas:", ganadas, "-", "Partidas Perdidas:", perdidas, "-", "Record de Intentos:", record_intentos)
         print("------------------------------------------------------------------------------")
         exit()
     else:
