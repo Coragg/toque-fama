@@ -358,8 +358,14 @@ while True:
                     if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) and \
                             int(intento[0]) != int(intento[3]) and int(intento[0]) != int(intento[4]) and \
                             int(intento[0]) != int(intento[5]) and int(intento[0]) != int(intento[6]) and \
-                            int(intento[0]) != int(intento[7]) and int(intento[1]) != int(intento[2]) and \
-                            int(intento[1]) != int(intento[3]):
+                            int(intento[1]) != int(intento[2]) and int(intento[1]) != int(intento[3]) and \
+                            int(intento[1]) != int(intento[4]) and int(intento[1]) != int(intento[5]) and \
+                            int(intento[1]) != int(intento[6]) and int(intento[2]) != int(intento[3]) and \
+                            int(intento[2]) != int(intento[4]) and int(intento[2]) != int(intento[5]) and \
+                            int(intento[2]) != int(intento[6]) and int(intento[3]) != int(intento[4]) and \
+                            int(intento[3]) != int(intento[5]) and int(intento[3]) != int(intento[6]) and \
+                            int(intento[4]) != int(intento[5]) and int(intento[4]) != int(intento[6]) and \
+                            int(intento[5]) != int(intento[6]):
                         if (primer_numero_aleatorio == int(intento[0])):
                             famas = famas + 1
                         elif primer_numero_aleatorio == int(intento[1]) or primer_numero_aleatorio == int(
