@@ -26,9 +26,23 @@ while True:
     if contador == 1:
         confirmar_jugar = input("S si desea jugar y N si no quiere jugar:")
     else:
-        if famas < 4:
+        if cantidad_digitos == 4:
             print("Fin del juego, la secuencia era", primer_numero_aleatorio, segundo_numero_aleatorio,
                   tercer_numero_aleatorio, cuarto_numero_aleatorio)
+        elif cantidad_digitos == 5:
+            print("Fin del juego, la secuencia era", primer_numero_aleatorio, segundo_numero_aleatorio,
+                  tercer_numero_aleatorio, cuarto_numero_aleatorio, quinto_numero_aleatorio)
+        elif cantidad_digitos == 6:
+            print("Fin del juego, la secuencia era", primer_numero_aleatorio, segundo_numero_aleatorio,
+                  tercer_numero_aleatorio, cuarto_numero_aleatorio, quinto_numero_aleatorio, sexto_numero_aleatorio)
+        elif cantidad_digitos == 7:
+            print("Fin del juego, la secuencia era", primer_numero_aleatorio, segundo_numero_aleatorio,
+                  tercer_numero_aleatorio, cuarto_numero_aleatorio, quinto_numero_aleatorio, sexto_numero_aleatorio,
+                  septimo_numero_aleatorio)
+        elif cantidad_digitos == 5:
+            print("Fin del juego, la secuencia era", primer_numero_aleatorio, segundo_numero_aleatorio,
+                  tercer_numero_aleatorio, cuarto_numero_aleatorio, quinto_numero_aleatorio, sexto_numero_aleatorio,
+                  septimo_numero_aleatorio, octavo_numero_aleatorio)
         confirmar_jugar = input("Si quieres volver a jugar presione S y si quiere dejar de jugar presione N: ")
         perdidas = contador - ganadas - 1
     if confirmar_jugar.upper() == "S":
@@ -48,7 +62,7 @@ while True:
                 segundo_numero_aleatorio = random.randrange(10)
                 tercer_numero_aleatorio = random.randrange(10)
                 cuarto_numero_aleatorio = random.randrange(10)
-            """print(primer_numero_aleatorio, segundo_numero_aleatorio, tercer_numero_aleatorio, cuarto_numero_aleatorio)"""
+            print(primer_numero_aleatorio, segundo_numero_aleatorio, tercer_numero_aleatorio, cuarto_numero_aleatorio)
             famas = 0
             toques = 0
             turnos_a_jugar = int(input("Ingrese los turnos a jugar:"))
@@ -100,6 +114,9 @@ while True:
                             print("Toques=4")
                         famas = 0
                         toques = 0
+                    elif famas < 4:
+                         print("Fin del juego, la secuencia era", primer_numero_aleatorio, segundo_numero_aleatorio,
+                               tercer_numero_aleatorio, cuarto_numero_aleatorio)
                     else:
                         print("Se invalida este intento al tener números repetidos")
                         break
