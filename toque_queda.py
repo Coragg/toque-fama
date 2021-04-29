@@ -14,6 +14,7 @@ ganadas = 0
 famas = 0
 perdidas = 0
 cantidad_digitos = 0
+record_intentos = 0
 primer_numero_aleatorio = 0
 segundo_numero_aleatorio = 0
 tercer_numero_aleatorio = 0
@@ -72,6 +73,7 @@ while True:
                 intento = input(f"{turno}) ingrese los numeros: ")
                 if len(intento) == 4:
                     print("Tus resultados del turno son:")
+                    record_intentos += 1
 
                     if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) and int(intento[0]) != int(intento[3]) and int(intento[1]) != int(intento[2]) and int(intento[1]) != int(intento[3]) and int(intento[2]) != int(intento[3]):
                         if(primer_numero_aleatorio == int(intento[0])):
@@ -148,6 +150,7 @@ while True:
                 intento = input(f"{turno}) ingrese los numeros: ")
                 if len(intento) == 5:
                     print("Tus resultados del turno son:")
+                    record_intentos += 1
 
                     if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) \
                             and int(intento[0]) != int(intento[3]) and int(intento[0]) != int(intento[4]) \
@@ -242,6 +245,7 @@ while True:
                 intento = input(f"{turno}) ingrese los numeros: ")
                 if len(intento) == 6:
                     print("Tus resultados del turno son:")
+                    record_intentos += 1
 
                     if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) and \
                             int(intento[0]) != int(intento[3]) and int(intento[0]) != int(intento[4]) and \
@@ -360,6 +364,7 @@ while True:
                 intento = input(f"{turno}) ingrese los numeros: ")
                 if len(intento) == 7:
                     print("Tus resultados del turno son:")
+                    record_intentos += 1
 
                     if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) and \
                             int(intento[0]) != int(intento[3]) and int(intento[0]) != int(intento[4]) and \
@@ -490,6 +495,7 @@ while True:
                 intento = input(f"{turno}) ingrese los numeros: ")
                 if len(intento) == 8:
                     print("Tus resultados del turno son:")
+                    record_intentos += 1
 
                     if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) \
                             and int(intento[0]) != int(intento[3]) and int(intento[0]) != int(intento[4]) \
@@ -596,7 +602,7 @@ while True:
     elif confirmar_jugar.upper() == "N":
         print("------------------------------------------------------------------------------")
         print("Espero que quieras volver a jugar.")
-        print("Partidas Jugadas:", contador - 1, "-", "Partidas Ganadas:", ganadas, "-", "Partidas Perdidas:", perdidas, "-", "Record de Intentos:")
+        print("Partidas Jugadas:", contador - 1, "-", "Partidas Ganadas:", ganadas, "-", "Partidas Perdidas:", perdidas, "-", "Record de Intentos:", record_intentos)
         print("------------------------------------------------------------------------------")
         exit()
     else:
