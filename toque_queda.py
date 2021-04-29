@@ -149,7 +149,11 @@ while True:
                 if len(intento) == 5:
                     print("Tus resultados del turno son:")
 
-                    if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) and int(intento[0]) != int(intento[3]) and int(intento[1]) != int(intento[2]) and int(intento[1]) != int(intento[3]) and int(intento[2]) != int(intento[3]):
+                    if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) \
+                            and int(intento[0]) != int(intento[3]) and int(intento[0]) != int(intento[4]) \
+                            and int(intento[1]) != int(intento[2]) and int(intento[1]) != int(intento[3]) \
+                            and int(intento[1]) != int(intento[4]) and int(intento[2]) != int(intento[3])\
+                            and int(intento[2]) != int(intento[4]) and int(intento[3] != int(intento[4])):
                         if(primer_numero_aleatorio == int(intento[0])):
                             famas = famas + 1
                         elif primer_numero_aleatorio == int(intento[1]) or primer_numero_aleatorio == int(intento[2]) or primer_numero_aleatorio == int(intento[3]) or primer_numero_aleatorio == int(intento[4]):
