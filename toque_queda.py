@@ -13,6 +13,7 @@ contador = 1
 ganadas = 0
 famas = 0
 perdidas = 0
+cantidad_digitos = 0
 primer_numero_aleatorio = 0
 segundo_numero_aleatorio = 0
 tercer_numero_aleatorio = 0
