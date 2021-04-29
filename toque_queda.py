@@ -40,7 +40,7 @@ while True:
             print("Fin del juego, la secuencia era", primer_numero_aleatorio, segundo_numero_aleatorio,
                   tercer_numero_aleatorio, cuarto_numero_aleatorio, quinto_numero_aleatorio, sexto_numero_aleatorio,
                   septimo_numero_aleatorio)
-        elif cantidad_digitos == 5:
+        elif cantidad_digitos == 8:
             print("Fin del juego, la secuencia era", primer_numero_aleatorio, segundo_numero_aleatorio,
                   tercer_numero_aleatorio, cuarto_numero_aleatorio, quinto_numero_aleatorio, sexto_numero_aleatorio,
                   septimo_numero_aleatorio, octavo_numero_aleatorio)
@@ -479,9 +479,13 @@ while True:
                 if len(intento) == 8:
                     print("Tus resultados del turno son:")
 
-                    if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) and int(
-                            intento[0]) != int(intento[3]) and int(intento[0]) != int(intento[4]) and int(intento[0]) != int(intento[5]) and int(intento[0]) != int(intento[6]) and int(intento[0]) != int(intento[7]) and int(intento[1]) != int(intento[2]) and int(
-                        intento[1]) != int(intento[3]) and int(intento[2]) != int(intento[3]) and int(intento[1] != int(intento[4]) and int(intento[1]) != int(intento[5]) and int(intento[1]) != int(intento[6]) and int(intento[1]) != int(intento[7])):
+                    if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) \
+                            and int(intento[0]) != int(intento[3]) and int(intento[0]) != int(intento[4]) \
+                            and int(intento[0]) != int(intento[5]) and int(intento[0]) != int(intento[6]) \
+                            and int(intento[0]) != int(intento[7]) and int(intento[1]) != int(intento[2]) \
+                            and int(intento[1]) != int(intento[3]) and int(intento[2]) != int(intento[3]) \
+                            and int(intento[1] != int(intento[4]) and int(intento[1]) != int(intento[5]) and int(intento[1]) != int(intento[6]) and int(intento[1]) != int(intento[7])):
+
                         if (primer_numero_aleatorio == int(intento[0])):
                             famas = famas + 1
                         elif primer_numero_aleatorio == int(intento[1]) or primer_numero_aleatorio == int(
