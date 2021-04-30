@@ -29,23 +29,28 @@ while True:
     if contador == 1:
         confirmar_jugar = input("S si desea jugar y N si no quiere jugar:")
     else:
-        if cantidad_digitos == 4:
+        if cantidad_digitos == 4 and famas < 4:
             print("Fin del juego, la secuencia era", primer_numero_aleatorio, segundo_numero_aleatorio,
                   tercer_numero_aleatorio, cuarto_numero_aleatorio)
-        elif cantidad_digitos == 5:
+            print("------------------------------------------------------------------------------")
+        elif cantidad_digitos == 5 and famas < 5:
             print("Fin del juego, la secuencia era", primer_numero_aleatorio, segundo_numero_aleatorio,
                   tercer_numero_aleatorio, cuarto_numero_aleatorio, quinto_numero_aleatorio)
-        elif cantidad_digitos == 6:
+            print("------------------------------------------------------------------------------")
+        elif cantidad_digitos == 6 and famas < 6:
             print("Fin del juego, la secuencia era", primer_numero_aleatorio, segundo_numero_aleatorio,
                   tercer_numero_aleatorio, cuarto_numero_aleatorio, quinto_numero_aleatorio, sexto_numero_aleatorio)
-        elif cantidad_digitos == 7:
+            print("------------------------------------------------------------------------------")
+        elif cantidad_digitos == 7 and famas < 7:
             print("Fin del juego, la secuencia era", primer_numero_aleatorio, segundo_numero_aleatorio,
                   tercer_numero_aleatorio, cuarto_numero_aleatorio, quinto_numero_aleatorio, sexto_numero_aleatorio,
                   septimo_numero_aleatorio)
-        elif cantidad_digitos == 8:
+            print("------------------------------------------------------------------------------")
+        elif cantidad_digitos == 8 and famas < 8:
             print("Fin del juego, la secuencia era", primer_numero_aleatorio, segundo_numero_aleatorio,
                   tercer_numero_aleatorio, cuarto_numero_aleatorio, quinto_numero_aleatorio, sexto_numero_aleatorio,
                   septimo_numero_aleatorio, octavo_numero_aleatorio)
+            print("------------------------------------------------------------------------------")
         confirmar_jugar = input("Si quieres volver a jugar presione S y si quiere dejar de jugar presione N: ")
         perdidas = contador - ganadas - 1
     if confirmar_jugar.upper() == "S":
@@ -76,7 +81,6 @@ while True:
                 if len(intento) == 4:
                     print("Tus resultados del turno son:")
                     record_intentos += 1
-
                     if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) and int(intento[0]) != int(intento[3]) and int(intento[1]) != int(intento[2]) and int(intento[1]) != int(intento[3]) and int(intento[2]) != int(intento[3]):
                         if(primer_numero_aleatorio == int(intento[0])):
                             famas = famas + 1
@@ -123,9 +127,11 @@ while True:
                          print("Fin del juego, la secuencia era", primer_numero_aleatorio, segundo_numero_aleatorio,
                                tercer_numero_aleatorio, cuarto_numero_aleatorio)
                     else:
+                        record_intentos += 1
                         print("Se invalida este intento al tener números repetidos")
                         break
                 else:
+                    record_intentos += 1
                     print("El usuario pierde su jugada, por ingresar un dato invalido.")
                     break
 
@@ -209,9 +215,11 @@ while True:
                         famas = 0
                         toques = 0
                     else:
+                        record_intentos += 1
                         print("Se invalida este intento al tener números repetidos")
                         break
                 else:
+                    record_intentos += 1
                     print("El usuario pierde su jugada, por ingresar un dato invalido.")
                     break
 
@@ -326,9 +334,11 @@ while True:
                         famas = 0
                         toques = 0
                     else:
+                        record_intentos += 1
                         print("Se invalida este intento al tener números repetidos")
                         break
                 else:
+                    record_intentos += 1
                     print("El usuario pierde su jugada, por ingresar un dato invalido.")
                     break
 
@@ -455,9 +465,11 @@ while True:
                         famas = 0
                         toques = 0
                     else:
+                        record_intentos += 1
                         print("Se invalida este intento al tener números repetidos")
                         break
                 else:
+                    record_intentos += 1
                     print("El usuario pierde su jugada, por ingresar un dato invalido. ")
                     break
 
@@ -595,9 +607,11 @@ while True:
                         famas = 0
                         toques = 0
                     else:
+                        record_intentos += 1
                         print("Se invalida este intento al tener números repetidos")
                         break
                 else:
+                    record_intentos += 1
                     print("El usuario pierde su jugada, por ingresar un dato invalido.")
                     break
 
