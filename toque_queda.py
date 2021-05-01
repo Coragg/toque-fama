@@ -84,7 +84,7 @@ while True:
                 if len(intento) == 3:
                     print("Tus resultados del turno son:")
                     record_intentos += 1
-                    if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) and int(intento[0]) != int(intento[3]) and int(intento[1]) != int(intento[2]) and int(intento[1]) != int(intento[3]) and int(intento[2]) != int(intento[3]):
+                    if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) and int(intento[1]) != int(intento[2]):
                         if primer_numero_aleatorio == int(intento[0]):
                             famas = famas + 1
                         elif primer_numero_aleatorio == int(intento[1]) or primer_numero_aleatorio == int(intento[2]):
@@ -97,8 +97,6 @@ while True:
                             famas = famas + 1
                         elif tercer_numero_aleatorio == int(intento[0]) or tercer_numero_aleatorio == int(intento[1]):
                             toques = toques + 1
-                        if cuarto_numero_aleatorio == int(intento[3]):
-                            famas = famas + 1
                         if famas==0:
                             print("Famas=0")
                         elif famas == 1:
