@@ -1,9 +1,10 @@
+#TDFI102.202110.10459.TR
 #Trabajo de toque y fama
-# Con Sofia Castro, Anibal Muñoz y Victor Camero
+# Con Sofia Castro, Anibal Muñoz (21087122-5) y Victor Camero
 import random
 print("------------------------------------------------------------------------------")
 print("Bienvenido al juego: toque y fama")
-print("El objetivo del juego: el juego generara de manera aleatoria 4 numeros\n"
+print("El objetivo del juego: el juego generara de manera aleatoria de 3 a 8 numeros\n"
       "del cero al nueve, tu deber es encontrarlos con las siguientes pistas\n"
       "si tienes 1 toque encontraste 1 numero pero no en el lugar indicado\n"
       "si encontraste 1 fama encontraste 1 numero y en el lugar indicado\n"
@@ -86,43 +87,37 @@ while True:
                     if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) and int(intento[0]) != int(intento[3]) and int(intento[1]) != int(intento[2]) and int(intento[1]) != int(intento[3]) and int(intento[2]) != int(intento[3]):
                         if primer_numero_aleatorio == int(intento[0]):
                             famas = famas + 1
-                        elif primer_numero_aleatorio == int(intento[1]) or primer_numero_aleatorio == int(intento[2]) or primer_numero_aleatorio == int(intento[3]):
+                        elif primer_numero_aleatorio == int(intento[1]) or primer_numero_aleatorio == int(intento[2]):
                             toques = toques + 1
                         if segundo_numero_aleatorio == int(intento[1]):
                             famas = famas + 1
-                        elif segundo_numero_aleatorio == int(intento[0]) or segundo_numero_aleatorio == int(intento[2]) or segundo_numero_aleatorio == int(intento[3]):
+                        elif segundo_numero_aleatorio == int(intento[0]) or segundo_numero_aleatorio == int(intento[2]) :
                             toques = toques + 1
                         if tercer_numero_aleatorio == int(intento[2]):
                             famas = famas + 1
-                        elif(tercer_numero_aleatorio == int(intento[0]) or tercer_numero_aleatorio == int(intento[1]) or tercer_numero_aleatorio == int(intento[3])):
+                        elif tercer_numero_aleatorio == int(intento[0]) or tercer_numero_aleatorio == int(intento[1]):
                             toques = toques + 1
-                        if(cuarto_numero_aleatorio == int(intento[3])):
+                        if cuarto_numero_aleatorio == int(intento[3]):
                             famas = famas + 1
-                        elif(cuarto_numero_aleatorio == int(intento[0]) or cuarto_numero_aleatorio == int(intento[1]) or cuarto_numero_aleatorio == int(intento[2])):
-                            toques = toques + 1
-                        if(famas==0):
+                        if famas==0:
                             print("Famas=0")
-                        elif(famas == 1):
+                        elif famas == 1:
                             print("Famas=1")
-                        elif(famas == 2):
+                        elif famas == 2:
                             print("Famas=2")
-                        elif(famas == 3):
-                            print("Famas=3")
-                        elif(famas == 4):
-                            print("Famas=4 ¡¡FELICIDADES GANASTE!!, Has acertado en el intento", turno)
+                        elif famas == 3:
+                            print("Famas=3 ¡¡FELICIDADES GANASTE!!, Has acertado en el intento", turno)
                             print("------------------------------------------------------------------------------")
                             ganadas += 1
                             break
-                        if(toques == 0):
+                        if toques == 0:
                             print("Toques=0")
-                        elif(toques == 1):
+                        elif toques == 1:
                             print("Toques=1")
-                        elif(toques == 2):
+                        elif toques == 2:
                             print("Toques=2")
-                        elif(toques == 3):
+                        elif toques == 3:
                             print("Toques=3")
-                        elif(toques == 4):
-                            print("Toques=4")
                         famas = 0
                         toques = 0
                     elif famas < 4:
