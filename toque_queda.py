@@ -60,9 +60,9 @@ while True:
         perdidas = contador - ganadas - 1
     if confirmar_jugar.upper() == "S":
         partidas_jugadas += 1
-        cantidad_digitos = int(input("Ingrese la cantidad de digitos a jugar(de 4 a 8):"))
-        while cantidad_digitos < 4 or cantidad_digitos > 8:
-            cantidad_digitos = int(input("Ingrese la cantidad de digitos a jugar(de 4 a 8):"))
+        cantidad_digitos = int(input("Ingrese la cantidad de digitos a jugar(de 3 a 8):"))
+        while cantidad_digitos < 3 or cantidad_digitos > 8:
+            cantidad_digitos = int(input("Ingrese la cantidad de digitos a jugar(de 3 a 8):"))
         if cantidad_digitos == 3:
             print("Vamos a jugar, suerte.")
             print("------------------------------------------------------------------------------")
