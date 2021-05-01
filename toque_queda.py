@@ -716,7 +716,7 @@ while True:
         print("------------------------------------------------------------------------------")
         print("Espero que quieras volver a jugar.")
         if partidas_jugadas > 1:
-            print("Partidas Jugadas:", partidas_jugadas, "-", "Partidas Ganadas:", ganadas, "-", "Partidas Perdidas:", perdidas, "-", "Record de Intentos:", record_intentos, "Mejor racha de victorias por intentos: ", min(lista_de_intentos))
+            print("Partidas Jugadas:", partidas_jugadas, "-", "Partidas Ganadas:", ganadas, "-", "Partidas Perdidas:", perdidas, "-", "Record de Intentos:", record_intentos, "-", "Mejor Racha en Intentos: ", min(lista_de_intentos))
         else:
             print("Partidas Jugadas:", partidas_jugadas, "-", "Partidas Ganadas:", ganadas, "-", "Partidas Perdidas:",
                   perdidas, "-", "Record de Intentos:", record_intentos)
