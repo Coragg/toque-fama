@@ -57,7 +57,7 @@ while True:
                   tercer_numero_aleatorio)
             print("------------------------------------------------------------------------------")
         confirmar_jugar = input("Si quieres volver a jugar presione S y si quiere dejar de jugar presione N: ")
-        perdidas = contador - ganadas - 1
+        perdidas = partidas_jugadas - ganadas
     if confirmar_jugar.upper() == "S":
         partidas_jugadas += 1
         cantidad_digitos = int(input("Ingrese la cantidad de digitos a jugar(de 3 a 8):"))
@@ -97,7 +97,7 @@ while True:
                             famas = famas + 1
                         elif tercer_numero_aleatorio == int(intento[0]) or tercer_numero_aleatorio == int(intento[1]):
                             toques = toques + 1
-                        if famas==0:
+                        if famas == 0:
                             print("Famas=0")
                         elif famas == 1:
                             print("Famas=1")
