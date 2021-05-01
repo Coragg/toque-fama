@@ -25,7 +25,7 @@ sexto_numero_aleatorio = 0
 septimo_numero_aleatorio = 0
 octavo_numero_aleatorio = 0
 partidas_jugadas = 0
-
+lista_de_intentos = []
 while True:
     if contador == 1:
         confirmar_jugar = input("S si desea jugar y N si no quiere jugar:")
