@@ -70,7 +70,8 @@ while True:
             segundo_numero_aleatorio = random.randrange(10)
             tercer_numero_aleatorio = random.randrange(10)
 
-            while primer_numero_aleatorio == segundo_numero_aleatorio or primer_numero_aleatorio == tercer_numero_aleatorio or segundo_numero_aleatorio == tercer_numero_aleatorio:
+            while primer_numero_aleatorio == segundo_numero_aleatorio or \
+                    primer_numero_aleatorio == tercer_numero_aleatorio or segundo_numero_aleatorio == tercer_numero_aleatorio:
                 primer_numero_aleatorio = random.randrange(10)
                 segundo_numero_aleatorio = random.randrange(10)
                 tercer_numero_aleatorio = random.randrange(10)
@@ -138,7 +139,9 @@ while True:
             tercer_numero_aleatorio = random.randrange(10)
             cuarto_numero_aleatorio = random.randrange(10)
 
-            while primer_numero_aleatorio == segundo_numero_aleatorio or primer_numero_aleatorio == tercer_numero_aleatorio or primer_numero_aleatorio == cuarto_numero_aleatorio or segundo_numero_aleatorio == tercer_numero_aleatorio or segundo_numero_aleatorio == cuarto_numero_aleatorio or tercer_numero_aleatorio == cuarto_numero_aleatorio:
+            while primer_numero_aleatorio == segundo_numero_aleatorio or primer_numero_aleatorio == tercer_numero_aleatorio\
+                    or primer_numero_aleatorio == cuarto_numero_aleatorio or segundo_numero_aleatorio == tercer_numero_aleatorio \
+                    or segundo_numero_aleatorio == cuarto_numero_aleatorio or tercer_numero_aleatorio == cuarto_numero_aleatorio:
                 primer_numero_aleatorio = random.randrange(10)
                 segundo_numero_aleatorio = random.randrange(10)
                 tercer_numero_aleatorio = random.randrange(10)
@@ -153,14 +156,18 @@ while True:
                 if len(intento) == 4:
                     print("Tus resultados del turno son:")
                     record_intentos += 1
-                    if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) and int(intento[0]) != int(intento[3]) and int(intento[1]) != int(intento[2]) and int(intento[1]) != int(intento[3]) and int(intento[2]) != int(intento[3]):
+                    if int(intento[0]) != int(intento[1]) and int(intento[0]) != int(intento[2]) \
+                            and int(intento[0]) != int(intento[3]) and int(intento[1]) != int(intento[2]) \
+                            and int(intento[1]) != int(intento[3]) and int(intento[2]) != int(intento[3]):
                         if primer_numero_aleatorio == int(intento[0]):
                             famas = famas + 1
-                        elif primer_numero_aleatorio == int(intento[1]) or primer_numero_aleatorio == int(intento[2]) or primer_numero_aleatorio == int(intento[3]):
+                        elif primer_numero_aleatorio == int(intento[1]) or primer_numero_aleatorio == int(intento[2]) \
+                                or primer_numero_aleatorio == int(intento[3]):
                             toques = toques + 1
                         if segundo_numero_aleatorio == int(intento[1]):
                             famas = famas + 1
-                        elif segundo_numero_aleatorio == int(intento[0]) or segundo_numero_aleatorio == int(intento[2]) or segundo_numero_aleatorio == int(intento[3]):
+                        elif segundo_numero_aleatorio == int(intento[0]) or segundo_numero_aleatorio == int(intento[2]) \
+                                or segundo_numero_aleatorio == int(intento[3]):
                             toques = toques + 1
                         if tercer_numero_aleatorio == int(intento[2]):
                             famas = famas + 1
@@ -215,7 +222,11 @@ while True:
             tercer_numero_aleatorio = random.randrange(10)
             cuarto_numero_aleatorio = random.randrange(10)
             quinto_numero_aleatorio = random.randrange(10)
-            while primer_numero_aleatorio == segundo_numero_aleatorio or primer_numero_aleatorio == tercer_numero_aleatorio or primer_numero_aleatorio == cuarto_numero_aleatorio or primer_numero_aleatorio == quinto_numero_aleatorio or segundo_numero_aleatorio == tercer_numero_aleatorio or segundo_numero_aleatorio == cuarto_numero_aleatorio or segundo_numero_aleatorio == quinto_numero_aleatorio or tercer_numero_aleatorio == cuarto_numero_aleatorio or tercer_numero_aleatorio == quinto_numero_aleatorio or cuarto_numero_aleatorio == quinto_numero_aleatorio:
+            while primer_numero_aleatorio == segundo_numero_aleatorio or primer_numero_aleatorio == tercer_numero_aleatorio \
+                    or primer_numero_aleatorio == cuarto_numero_aleatorio or primer_numero_aleatorio == quinto_numero_aleatorio \
+                    or segundo_numero_aleatorio == tercer_numero_aleatorio or segundo_numero_aleatorio == cuarto_numero_aleatorio \
+                    or segundo_numero_aleatorio == quinto_numero_aleatorio or tercer_numero_aleatorio == cuarto_numero_aleatorio \
+                    or tercer_numero_aleatorio == quinto_numero_aleatorio or cuarto_numero_aleatorio == quinto_numero_aleatorio:
                 primer_numero_aleatorio = random.randrange(10)
                 segundo_numero_aleatorio = random.randrange(10)
                 tercer_numero_aleatorio = random.randrange(10)
@@ -239,7 +250,8 @@ while True:
                             and int(intento[2]) != int(intento[4]) and int(intento[3] != int(intento[4])):
                         if(primer_numero_aleatorio == int(intento[0])):
                             famas = famas + 1
-                        elif primer_numero_aleatorio == int(intento[1]) or primer_numero_aleatorio == int(intento[2]) or primer_numero_aleatorio == int(intento[3]) or primer_numero_aleatorio == int(intento[4]):
+                        elif primer_numero_aleatorio == int(intento[1]) or primer_numero_aleatorio == int(intento[2]) \
+                                or primer_numero_aleatorio == int(intento[3]) or primer_numero_aleatorio == int(intento[4]):
                             toques = toques + 1
                         if(segundo_numero_aleatorio == int(intento[1])):
                             famas = famas + 1
