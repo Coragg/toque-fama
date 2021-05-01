@@ -1,6 +1,6 @@
 #TDFI102.202110.10459.TR
 #Trabajo de toque y fama
-# Con Sofia Castro, Anibal Muñoz (21087122-5) y Victor Camero
+# Con Sofia Castro, Anibal Muñoz (21087122-5) y Victor Camero(25833773-5)
 import random
 print("------------------------------------------------------------------------------")
 print("Bienvenido al juego: toque y fama")
@@ -70,7 +70,7 @@ while True:
             segundo_numero_aleatorio = random.randrange(10)
             tercer_numero_aleatorio = random.randrange(10)
 
-            while primer_numero_aleatorio == segundo_numero_aleatorio or primer_numero_aleatorio == tercer_numero_aleatorio or segundo_numero_aleatorio == tercer_numero_aleatorio :
+            while primer_numero_aleatorio == segundo_numero_aleatorio or primer_numero_aleatorio == tercer_numero_aleatorio or segundo_numero_aleatorio == tercer_numero_aleatorio:
                 primer_numero_aleatorio = random.randrange(10)
                 segundo_numero_aleatorio = random.randrange(10)
                 tercer_numero_aleatorio = random.randrange(10)
@@ -91,7 +91,7 @@ while True:
                             toques = toques + 1
                         if segundo_numero_aleatorio == int(intento[1]):
                             famas = famas + 1
-                        elif segundo_numero_aleatorio == int(intento[0]) or segundo_numero_aleatorio == int(intento[2]) :
+                        elif segundo_numero_aleatorio == int(intento[0]) or segundo_numero_aleatorio == int(intento[2]):
                             toques = toques + 1
                         if tercer_numero_aleatorio == int(intento[2]):
                             famas = famas + 1
