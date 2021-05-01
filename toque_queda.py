@@ -26,6 +26,7 @@ septimo_numero_aleatorio = 0
 octavo_numero_aleatorio = 0
 partidas_jugadas = 0
 lista_de_intentos = []
+best_intento = 0
 while True:
     if contador == 1:
         confirmar_jugar = input("S si desea jugar y N si no quiere jugar:")
@@ -105,6 +106,7 @@ while True:
                         elif famas == 2:
                             print("Famas=2")
                         elif famas == 3:
+                            best_intento = turno
                             print("Famas=3 ¡¡FELICIDADES GANASTE!!, Has acertado en el intento", turno)
                             print("------------------------------------------------------------------------------")
                             ganadas += 1
@@ -130,7 +132,8 @@ while True:
                     record_intentos += 1
                     print("El usuario pierde su jugada, por ingresar un dato invalido.")
                     break
-
+            if best_intento > 0:
+                lista_de_intentos.append(best_intento)
         if cantidad_digitos == 4:
             print("Vamos a jugar, suerte.")
             print("------------------------------------------------------------------------------")
@@ -186,6 +189,7 @@ while True:
                         elif(famas == 3):
                             print("Famas=3")
                         elif(famas == 4):
+                            best_intento = turno
                             print("Famas=4 ¡¡FELICIDADES GANASTE!!, Has acertado en el intento", turno)
                             print("------------------------------------------------------------------------------")
                             ganadas += 1
@@ -213,7 +217,8 @@ while True:
                     record_intentos += 1
                     print("El usuario pierde su jugada, por ingresar un dato invalido.")
                     break
-
+            if best_intento > 0:
+                lista_de_intentos.append(best_intento)
         elif cantidad_digitos == 5:
             print("Vamos a jugar, suerte.")
             print("------------------------------------------------------------------------------")
@@ -280,6 +285,7 @@ while True:
                         elif(famas == 4):
                             print("Famas=4")
                         elif(famas == 5):
+                            best_intento = turno
                             print("Famas=5  ¡¡FELICIDADES GANASTE!!, Has acertado en el intento", turno)
                             print("------------------------------------------------------------------------------")
                             ganadas += 1
@@ -306,7 +312,8 @@ while True:
                     record_intentos += 1
                     print("El usuario pierde su jugada, por ingresar un dato invalido.")
                     break
-
+            if best_intento > 0:
+                lista_de_intentos.append(best_intento)
         elif cantidad_digitos == 6:
             print("Vamos a jugar, suerte.")
             print("------------------------------------------------------------------------------")
@@ -397,6 +404,7 @@ while True:
                         elif (famas == 5):
                             print("Famas=5")
                         elif (famas == 6):
+                            best_intento = turno
                             print("Famas=6 ¡¡FELICIDADES GANASTE!!, Has acertado en el intento", turno)
                             print("------------------------------------------------------------------------------")
                             ganadas += 1
@@ -425,7 +433,8 @@ while True:
                     record_intentos += 1
                     print("El usuario pierde su jugada, por ingresar un dato invalido.")
                     break
-
+            if best_intento > 0:
+                lista_de_intentos.append(best_intento)
         elif cantidad_digitos == 7:
             print("Vamos a jugar, suerte.")
             print("------------------------------------------------------------------------------")
@@ -526,6 +535,7 @@ while True:
                         elif (famas == 6):
                             print("Famas=6")
                         elif (famas == 7):
+                            best_intento = turno
                             print("Famas=7 ¡¡FELICIDADES GANASTE!!, Has acertado en el intento", turno)
                             print("------------------------------------------------------------------------------")
                             ganadas += 1
@@ -556,7 +566,8 @@ while True:
                     record_intentos += 1
                     print("El usuario pierde su jugada, por ingresar un dato invalido. ")
                     break
-
+            if best_intento > 0:
+                lista_de_intentos.append(best_intento)
         elif cantidad_digitos == 8:
             primer_numero_aleatorio = random.randrange(10)
             segundo_numero_aleatorio = random.randrange(10)
@@ -666,6 +677,7 @@ while True:
                         elif (famas == 7):
                             print("Famas=7")
                         elif (famas == 8):
+                            best_intento = turno
                             print("Famas=8 ¡¡FELICIDADES GANASTE!!, Has acertado en el intento", turno)
                             print("------------------------------------------------------------------------------")
                             ganadas += 1
@@ -698,11 +710,16 @@ while True:
                     record_intentos += 1
                     print("El usuario pierde su jugada, por ingresar un dato invalido.")
                     break
-
+            if best_intento > 0:
+                lista_de_intentos.append(best_intento)
     elif confirmar_jugar.upper() == "N":
         print("------------------------------------------------------------------------------")
         print("Espero que quieras volver a jugar.")
-        print("Partidas Jugadas:", partidas_jugadas, "-", "Partidas Ganadas:", ganadas, "-", "Partidas Perdidas:", perdidas, "-", "Record de Intentos:", record_intentos)
+        if partidas_jugadas > 1:
+            print("Partidas Jugadas:", partidas_jugadas, "-", "Partidas Ganadas:", ganadas, "-", "Partidas Perdidas:", perdidas, "-", "Record de Intentos:", record_intentos, "Mejor racha de victorias por intentos: ", min(lista_de_intentos))
+        else:
+            print("Partidas Jugadas:", partidas_jugadas, "-", "Partidas Ganadas:", ganadas, "-", "Partidas Perdidas:",
+                  perdidas, "-", "Record de Intentos:", record_intentos)
         print("------------------------------------------------------------------------------")
         exit()
     else:
