@@ -1,6 +1,6 @@
 #TDFI102.202110.10459.TR
 #Trabajo de toque y fama
-# Con Sofia Castro, Anibal Muñoz (21087122-5) y Victor Camero(25833773-5)
+# Con Sofia Castro (21042213-7), Anibal Muñoz (21087122-5) y Victor Camero(25833773-5)
 import random
 print("------------------------------------------------------------------------------")
 print("Bienvenido al juego: toque y fama")
