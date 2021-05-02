@@ -6,8 +6,8 @@ print("-------------------------------------------------------------------------
 print("Bienvenido al juego: toque y fama")
 print("El objetivo del juego es generar de manera aleatoria de 3 a 8 números\n"
       "del cero al nueve, tu deber es encontrarlos con las siguientes pistas\n"
-      "si tienes 1 toque encontraste 1 numero pero no en el lugar indicado\n"
-      "si encontraste 1 fama encontraste 1 numero y en el lugar indicado\n"
+      "si tienes 1 toque encontraste 1 número pero no en el lugar indicado\n"
+      "si encontraste 1 fama encontraste 1 número y en el lugar indicado\n"
       "si logras todas las famas, felicidades ganaste")
 print("------------------------------------------------------------------------------")
 contador = 1
