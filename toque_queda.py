@@ -9,6 +9,7 @@ print("El objetivo del juego es generar de manera aleatoria de 3 a 8 números\n"
       "si tienes 1 toque encontraste 1 número pero no en el lugar indicado\n"
       "si encontraste 1 fama encontraste 1 número y en el lugar indicado\n"
       "si logras todas las famas, felicidades ganaste")
+print("Nota: si ingresa un número con mas digitos del que indico o números repetidos, usted pierde su partida")
 print("------------------------------------------------------------------------------")
 contador = 1
 ganadas = 0
@@ -64,6 +65,7 @@ while True:
         cantidad_digitos = int(input("Ingrese la cantidad de digitos a jugar(de 3 a 8):"))
         while cantidad_digitos < 3 or cantidad_digitos > 8:
             cantidad_digitos = int(input("Ingrese la cantidad de digitos a jugar(de 3 a 8):"))
+        print("\nUsted va a jugar con", cantidad_digitos, "digitos")
         if cantidad_digitos == 3:
             print("Vamos a jugar, suerte.")
             print("------------------------------------------------------------------------------")
@@ -407,7 +409,7 @@ while True:
                                 or tercer_numero_aleatorio == int(intento[5]):
                             toques = toques + 1
                         if cuarto_numero_aleatorio == int(intento[3]):
-                            famas = famas + 1
+                            famas += 1
                         elif cuarto_numero_aleatorio == int(intento[0]) or cuarto_numero_aleatorio == int(intento[1]) \
                                 or cuarto_numero_aleatorio == int(intento[2]) \
                                 or cuarto_numero_aleatorio == int(intento[4]) \
